@@ -1,0 +1,28 @@
+CREDENCIALES DEL SISTEMA - Sistema de Préstamos y Cobranza Pro
+================================================================
+
+ACCESO AL SISTEMA (usuarios de demostración, creados con "php artisan migrate --seed")
+URL local: http://localhost:8000/login
+
+  Rol                  Correo                          Contraseña
+  -------------------  ------------------------------  ----------
+  Super Administrador  superadmin@prestamospro.test     password
+  Administrador        admin@prestamospro.test          password
+  Cobrador             cobrador@prestamospro.test       password
+
+  Nota: el Asistente IA y el Chat IA solo los ven el Administrador y el Super Administrador.
+
+BASE DE DATOS (archivo .env)
+  Motor:        MySQL
+  Servidor:     127.0.0.1
+  Puerto:       3306
+  Base de datos: saas_prestamos_cobranzas
+  Usuario:      root
+  Contraseña:   (vacía)
+
+ASISTENTE IA
+  La clave API (Gemini u otro proveedor) la configuras tú en: Inteligencia > Asistente IA > Configurar IA.
+  Se guarda cifrada en la base de datos y no se puede consultar después.
+
+RECOMENDACIÓN: cambia las contraseñas de demostración antes de usar el sistema en producción
+(Perfil > Cambiar contraseña) y no compartas este archivo.
